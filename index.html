@@ -7,12 +7,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet">
 
   <title>Cryptograph</title>
 </head>
 
 <body>
+
+
+
+  <nav class="navbar navbar-light bg-grey">
+    <a class="navbar-brand" href="#">
+      <img src="img/VRT-logo.jpg" width="30" height="30" alt="">
+    </a>
+  </nav>
+
+
   <!-- TradingView Widget BEGIN -->
   <div class="tradingview-widget-container">
     <div id="tradingview_e73e7"></div>
@@ -22,8 +32,8 @@
     <script type="text/javascript">
       new TradingView.widget(
         {
-          "width": 1920,
-          "height": 1080,
+          "width": 1280,
+          "height": 720,
           "symbol": "COINBASE:BTCEUR",
           "interval": "1",
           "timezone": "Europe/Amsterdam",
@@ -40,6 +50,37 @@
   </div>
   <!-- TradingView Widget END -->
 
+
+  <!-- TradingView Widget BEGIN -->
+  <div class="container">
+    <div class="row">
+      <div class="col-10 h-100 d-flex justify-content-center">
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/BTCEUR/technicals/"
+              rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for BTCEUR</span></a> by
+            TradingView
+          </div>
+          <script type="text/javascript"
+            src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+              {
+                "interval": "1D",
+                  "width": 400,
+                    "isTransparent": false,
+                      "height": 400,
+                        "symbol": "COINBASE:BTCEUR",
+                          "showIntervalTabs": false,
+                            "locale": "en",
+                              "colorTheme": "light"
+              }
+            </script>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- TradingView Widget END -->
+
+  <!--
   <div class="container">
     <div class="row">
       <div class="col-md-4">
@@ -53,6 +94,7 @@
       </div>
     </div>
   </div>
+  -->
 
 
 
